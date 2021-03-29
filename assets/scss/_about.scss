@@ -1,0 +1,108 @@
+@import "custom-variables";
+@import "typo";
+
+// donne un background color sur seulement une partie du container
+@mixin cut-background($pourcent) {
+    background: -webkit-linear-gradient(top, $primary $pourcent, white 30%);
+    background: -moz-linear-gradient(top, $primary $pourcent, white 30%);
+    background: -o-linear-gradient(top, $primary $pourcent, white 30%);
+    background: -ms-linear-gradient(top, $primary $pourcent, white 30%);
+    background: linear-gradient(top, $primary $pourcent, white 30%);
+}
+
+// positionne le texte descriptif de la section 'about'
+@mixin position-text-about {
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 5vw;
+}
+
+// defini les regles en commun pour positionner/styliser la section 'about' utiliser dans les mediaq
+@mixin about-shape{
+    margin-top: 10vh;
+    background-color: $primary;
+    position: relative;
+   
+
+}
+
+
+// ============================================================= MEDIA QUERIES ECRAN ORDI =============================================================
+
+
+@media screen and (min-width: 992px) {
+    #about {
+        height: 615px;
+        @include cut-background(75%);
+        margin-top: 10vh;
+        margin-bottom: 6vh;
+    }
+    #photo-about {
+        margin-top: 5rem;
+    }
+}
+
+// ============================== MEDIA-QUERIES tablet ===============================
+
+@media all and (max-width: 991px) {
+    #about {
+        height: 780px;
+        @include about-shape;
+        margin-bottom: 0vh;
+    }
+    #photo-about {
+        margin-top: -6%;
+    }
+    #text-about {
+        @include position-text-about;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #about {
+        height: 780px;
+    }
+    #photo-about {
+        margin-top: -6%;
+    }
+}
+
+// ============================== MEDIA-QUERIES TELEPHONE ===============================
+
+@media all and (max-width: 576px) {
+    #about {
+        height: 795px;
+    }
+    #photo-about {
+        margin-top: -8%;
+    }
+}
+
+@media all and (max-width: 495px) {
+    #about {
+        height: 690px;
+    }
+    #photo-about {
+        margin-top: -10%;
+    }
+}
+
+@media all and (max-width: 425px) {
+    #about {
+        height: 650px;
+    }
+}
+
+@media all and (max-width: 375px) {
+    #about {
+        height: 590px;
+    }
+}
+
+@media all and (max-width: 325px) {
+    #about {
+        height: 570px;
+    }
+    
+}

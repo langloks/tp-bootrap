@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "duruSans";
+    src: url("../font/duruSans/DuruSans-Regular.woff2") format("woff2"),
+        url("../font/duruSans/DuruSans-Regular.woff") format("woff"),
+        url("../font/duruSans/DuruSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "saolDisplay";
+    src: url("../font/saolDisplay/SaolDisplay-Regular.woff2") format("woff2"),
+        url("../font/saolDisplay/SaolDisplay-Regular.woff") format("woff"),
+        url("../font/saolDisplay/SaolDisplay-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "bandeins";
+    src: //url('../font/bandeins/bandeins-strange-variable-webfont.woff2') format('woff2'),
+        //url('../font/bandeins/bandeins-strange-variable-webfont.woff') format('woff'),
+        url("../font/bandeins/bandeins-strange-variable.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@mixin font-styling ($text-color,$font-f){
+    color: $text-color;
+    font-family: $font-f;
+}
+
+header {
+    .logo {
+        font-size: 15vh;
+        font-family: saolDisplay;
+        line-height: 0.8em;
+    }
+    .sublogo {
+        font-size: 3vh;
+        font-family: duruSans;
+    }
+}
+
+nav {
+    .nav-brand {
+        font-family: "duruSans";
+    }
+    .nav-item {
+        font-family: "bandeins";
+    }
+}
+
+#text-about {
+    h1 {@include font-styling (white,'bandeins')}
+    p  {@include font-styling (white,'duruSans')}
+}
+
+#text-work {
+    h1 {@include font-styling (black,'bandeins')}
+    p  {@include font-styling (black,'duruSans')}
+}
+
+#text-portfolio {
+    h1 {@include font-styling (white,'bandeins')}
+}
