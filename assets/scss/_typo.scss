@@ -39,6 +39,21 @@ header {
     }
 }
 
+@media all and (max-width: 375px) {
+
+    header {
+        .logo {
+            font-size: 10vh;
+            font-family: saolDisplay;
+            line-height: 0.8em;
+        }
+        .sublogo {
+            font-size: 2vh;
+            font-family: duruSans;
+        }
+    }
+}
+
 nav {
     .nav-brand {
         font-family: "duruSans";
@@ -60,4 +75,24 @@ nav {
 
 #text-portfolio {
     h1 {@include font-styling (white,'bandeins')}
+}
+
+footer {
+    @include font-styling (black,'bandeins');
+    font-size: 1rem;
+
+    a {
+        @include font-styling (black,'bandeins');
+        font-size: 1rem;
+        text-decoration: none;
+    }
+    a:visited {
+        text-decoration: none;
+        color: black;
+    }
+    a:hover{
+        text-decoration: none;
+        color: black;
+        
+    }
 }

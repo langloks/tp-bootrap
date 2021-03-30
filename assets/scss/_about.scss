@@ -19,24 +19,32 @@
 }
 
 // defini les regles en commun pour positionner/styliser la section 'about' utiliser dans les mediaq
-@mixin about-shape{
-    margin-top: 10vh;
+@mixin about-shape {
+    margin-top: 10%;
     background-color: $primary;
     position: relative;
-   
-
 }
 
-
+#hr-top-about, #hr-bot-about{
+    height: 1px;
+    border: 0; 
+    border-top: 2px solid white;
+}
 // ============================================================= MEDIA QUERIES ECRAN ORDI =============================================================
-
-
-@media screen and (min-width: 992px) {
+@media all and (min-width: 1200px) {
     #about {
-        height: 615px;
-        @include cut-background(75%);
-        margin-top: 10vh;
-        margin-bottom: 6vh;
+        height: 735px;
+        @include cut-background(80%);
+    }
+    #photo-about {
+        margin-top: 5rem;
+    }
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px) {
+    #about {
+        height: 620px;
+        @include cut-background(80%);
     }
     #photo-about {
         margin-top: 5rem;
@@ -104,5 +112,4 @@
     #about {
         height: 570px;
     }
-    
 }

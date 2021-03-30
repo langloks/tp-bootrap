@@ -23,6 +23,17 @@ header .sublogo {
   font-family: duruSans;
 }
 
+@media all and (max-width: 375px) {
+  header .logo {
+    font-size: 10vh;
+    font-family: saolDisplay;
+    line-height: 0.8em;
+  }
+  header .sublogo {
+    font-size: 2vh;
+    font-family: duruSans;
+  }
+}
 nav .nav-brand {
   font-family: "duruSans";
 }
@@ -51,6 +62,26 @@ nav .nav-item {
 #text-portfolio h1, #text-portfolio .h1 {
   color: white;
   font-family: "bandeins";
+}
+
+footer {
+  color: black;
+  font-family: "bandeins";
+  font-size: 1rem;
+}
+footer a {
+  color: black;
+  font-family: "bandeins";
+  font-size: 1rem;
+  text-decoration: none;
+}
+footer a:visited {
+  text-decoration: none;
+  color: black;
+}
+footer a:hover {
+  text-decoration: none;
+  color: black;
 }
 
 header {
@@ -110,6 +141,17 @@ header .sublogo {
   font-family: duruSans;
 }
 
+@media all and (max-width: 375px) {
+  header .logo {
+    font-size: 10vh;
+    font-family: saolDisplay;
+    line-height: 0.8em;
+  }
+  header .sublogo {
+    font-size: 2vh;
+    font-family: duruSans;
+  }
+}
 nav .nav-brand {
   font-family: "duruSans";
 }
@@ -140,16 +182,54 @@ nav .nav-item {
   font-family: "bandeins";
 }
 
-@media screen and (min-width: 992px) {
+footer {
+  color: black;
+  font-family: "bandeins";
+  font-size: 1rem;
+}
+footer a {
+  color: black;
+  font-family: "bandeins";
+  font-size: 1rem;
+  text-decoration: none;
+}
+footer a:visited {
+  text-decoration: none;
+  color: black;
+}
+footer a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+#hr-top-about, #hr-bot-about {
+  height: 1px;
+  border: 0;
+  border-top: 2px solid white;
+}
+
+@media all and (min-width: 1200px) {
   #about {
-    height: 615px;
-    background: -webkit-linear-gradient(top, #3A3EAE 75%, white 30%);
-    background: -moz-linear-gradient(top, #3A3EAE 75%, white 30%);
-    background: -o-linear-gradient(top, #3A3EAE 75%, white 30%);
-    background: -ms-linear-gradient(top, #3A3EAE 75%, white 30%);
-    background: linear-gradient(top, #3A3EAE 75%, white 30%);
-    margin-top: 10vh;
-    margin-bottom: 6vh;
+    height: 735px;
+    background: -webkit-linear-gradient(top, #3A3EAE 80%, white 30%);
+    background: -moz-linear-gradient(top, #3A3EAE 80%, white 30%);
+    background: -o-linear-gradient(top, #3A3EAE 80%, white 30%);
+    background: -ms-linear-gradient(top, #3A3EAE 80%, white 30%);
+    background: linear-gradient(top, #3A3EAE 80%, white 30%);
+  }
+
+  #photo-about {
+    margin-top: 5rem;
+  }
+}
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  #about {
+    height: 620px;
+    background: -webkit-linear-gradient(top, #3A3EAE 80%, white 30%);
+    background: -moz-linear-gradient(top, #3A3EAE 80%, white 30%);
+    background: -o-linear-gradient(top, #3A3EAE 80%, white 30%);
+    background: -ms-linear-gradient(top, #3A3EAE 80%, white 30%);
+    background: linear-gradient(top, #3A3EAE 80%, white 30%);
   }
 
   #photo-about {
@@ -159,7 +239,7 @@ nav .nav-item {
 @media all and (max-width: 991px) {
   #about {
     height: 780px;
-    margin-top: 10vh;
+    margin-top: 10%;
     background-color: #3A3EAE;
     position: relative;
     margin-bottom: 0vh;
@@ -218,125 +298,150 @@ nav .nav-item {
     height: 570px;
   }
 }
-.hr-down {
-  width: 65%;
-  margin-left: auto;
+#work {
+  overflow: hidden;
 }
 
-@media all and (max-width: 2560px) {
+#ink {
+  max-width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+#couture {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  object-fit: contain;
+  min-height: 100%;
+}
+
+#text-work {
+  padding-right: 15%;
+}
+
+@media all and (min-width: 1200px) {
   #work {
-    position: relative;
-    height: 690px;
-    overflow: hidden;
+    height: 60vh;
   }
   #work #ink {
-    max-width: 100%;
-    min-height: 50%;
-    object-fit: cover;
+    height: 70%;
   }
-  #work #couture {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
-
-  #text-work {
-    margin-right: 35%;
-    margin-bottom: 0%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    text-align: right;
-  }
-  #text-work .hr-up {
-    width: 35%;
-    display: block;
-    margin-bottom: rem;
-    margin-left: auto;
+  #work #text-work {
+    padding-right: 0%;
+    margin-left: 25%;
   }
 }
 @media all and (min-width: 992px) and (max-width: 1200px) {
   #work {
-    position: relative;
-    height: 590px;
-    overflow: hidden;
+    height: 40vh;
+  }
+  #work #ink {
+    height: 70%;
   }
   #work #text-work {
-    margin-right: 35%;
-    margin-bottom: 0%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    text-align: right;
+    padding-right: 0%;
   }
-  #work #text-work .hr-up {
-    width: 35%;
-    display: none;
-    margin-bottom: rem;
-    margin-left: auto;
+}
+@media all and (max-width: 992px) {
+  #work {
+    height: 60vh;
+  }
+  #work #ink {
+    height: 80%;
+  }
+  #work #text-work {
+    padding-right: 20%;
+  }
+}
+@media all and (max-width: 575px) {
+  #work {
+    height: 50vh;
+  }
+  #work #ink {
+    height: 80%;
+  }
+  #work #couture {
+    top: 20%;
+  }
+}
+#portfolio {
+  position: relative;
+  height: 475px;
+}
+
+#video-support-portfolio {
+  max-width: 100%;
+  min-height: 50%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 992px) {
+  #portfolio {
+    height: 850px;
+  }
+  #portfolio #carouselExampleIndicators {
+    top: 90px;
+  }
+  #portfolio #text-portfolio {
+    background: #172346;
+    position: absolute;
+    top: 0;
+    height: 60%;
+    right: 0;
+  }
+  #portfolio #text-portfolio h1, #portfolio #text-portfolio .h1 {
+    margin-left: 5vw;
+    margin-top: 2vh;
   }
 }
 @media all and (max-width: 991px) {
-  #work {
-    position: relative;
-    height: 550px;
-    overflow: hidden;
+  #portfolio {
+    height: 780px;
   }
-  #work #ink {
-    max-width: 100%;
-    min-height: 50%;
-    object-fit: cover;
-  }
-  #work #text-work {
-    margin-right: 45%;
-    margin-bottom: 0%;
+  #portfolio #carouselExampleIndicators {
+    top: 85px;
     position: absolute;
-    bottom: 0;
-    right: 0;
-    text-align: right;
   }
-  #work #text-work hr {
-    display: none;
+  #portfolio #text-portfolio {
+    background: #172346;
+    position: absolute;
+    top: 0;
+    height: 80%;
+  }
+  #portfolio #text-portfolio h1, #portfolio #text-portfolio .h1 {
+    margin-left: 5vw;
+    margin-top: 2vh;
   }
 }
-@media all and (max-width: 767px) {
-  #work {
-    position: relative;
-    height: 460px;
-    overflow: hidden;
+@media all and (max-width: 768px) {
+  #portfolio {
+    height: 800px;
   }
-  #work #text-work {
-    margin-right: 45%;
-    margin-bottom: 0%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    text-align: right;
+}
+@media all and (max-width: 576px) {
+  #portfolio {
+    height: 795px;
+  }
+}
+@media all and (max-width: 495px) {
+  #portfolio {
+    height: 690px;
+  }
+}
+@media all and (max-width: 425px) {
+  #portfolio {
+    height: 650px;
   }
 }
 @media all and (max-width: 375px) {
-  #work {
-    position: relative;
-    height: 300px;
-    overflow: hidden;
+  #portfolio {
+    height: 550px;
   }
-  #work #text-work {
-    margin-right: 45%;
-    margin-bottom: 0%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    text-align: right;
-  }
-  #work #text-work p {
-    margin-bottom: 40%;
-    display: none;
-  }
-  #work #text-work .hr-up {
-    width: 35%;
-    display: block;
-    margin-bottom: rem;
-    margin-left: auto;
+}
+@media all and (max-width: 325px) {
+  #portfolio {
+    height: 475px;
   }
 }
 /*!
@@ -2331,15 +2436,15 @@ progress {
 }
 
 .table-secondary {
-  --bs-table-bg: #f5f7fc;
-  --bs-table-striped-bg: #e9ebef;
+  --bs-table-bg: #d1d3da;
+  --bs-table-striped-bg: #c7c8cf;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #dddee3;
+  --bs-table-active-bg: #bcbec4;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #e3e4e9;
+  --bs-table-hover-bg: #c1c3ca;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #dddee3;
+  border-color: #bcbec4;
 }
 
 .table-success {
